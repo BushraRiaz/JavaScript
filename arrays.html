@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays</title>
+</head>
+
+<body>
+  <h1>Arrays</h1>
+  <script>
+    // let bookList = ['The Al-Chemist', 'Forty Rules of Love']
+    // console.log(bookList[1]);
+    // // console.log(bookList.indexOf('The Al-Chemist'));
+
+    // const array=[1,2,3,4,5,6,7,8]
+    // console.log(array);
+    // console.log(array.length)
+    // console.log(array.indexOf(4));
+    // console.log(array[array.length-1]);
+
+    //const num= new Array(1,2,3,4,5,6,7,8);
+    //1-PUSH--->Add values from the end of array
+    // num.push(10);
+    //console.log(num.push(10));
+
+    //2-UNSHIFT--->Add values at the start of array
+    //num.unshift(11);
+    //console.log(num.unshift(11));
+
+    //3-POP--->Remove value at the end of the arry
+    //num.pop();
+    //console.log(num.pop());
+
+    //4-Shift--->Remove value from the start of the array
+    //num.shift();
+    //console.log(num.shift());
+
+    //TO CHANGE THE VALUE OF INDEX
+    // num[3]='Bushi'
+    // console.log(num);
+
+    // const city = ['Lahore', 'Shahkot', 'Layyah', 'Lahore']
+    // console.log(city);
+    // console.log(city.IndexOf('Lahore'));
+    // console.log(city.lastIndexOf('Lahore'));
+    // console.log(city.includes('Shahkot'));
+    // console.log(city.includes('Shahkot',2));
+    //###INCLUDES ONLY USE IN PRIMITIVE DATA  TYPES
+    // const object = [
+    // {
+    // name: 'Apna College',
+    // subscribes: 1000
+    // },
+    // {
+    // name: 'Harry',
+    // subscribes: 30000
+    // },
+    // {
+    // name: 'codestakr',
+    // subscribes: 5000
+    // }
+    // ]
+    // // console.log(object.find(function (element) { return element.subscribes === 5000 })
+    // );
+    // console.log(object.find(function (element) {
+    // return element.
+    // name === 'codestakr'
+    // })
+    // );
+
+    //ARROW FUNCTION
+    // If we have only one element
+    // console.log(object.find( element=>  element.name==='codestakr'))
+
+    // let num1= ['Lahore', 'Shahkot', 'Layyah', 'Lahore']
+    // let num2= ['Faisalabad', 'Shorkot', 'Multan']
+    // console.log(num1.concat('Karachi'));
+    // console.log(num1.concat(num2));
+    // let num3 =num1.concat(num2);
+    //SLICE METHOD
+    // console.log(num3.slice(3));
+    // console.log(num3.slice(3,5));
+
+    //SPREAD OPERATOR
+    //let num3=[...num1,...num2]
+    //console.log(num3);
+
+    //FOR LOOP Method-1
+    // let num1= ['Lahore', 'Shahkot', 'Layyah', ]
+    //  let num2= ['Faisalabad', 'Shorkot', 'Multan']
+    //  let num3 =num1.concat(num2);
+    //  for(i=0;i<num3.length;i++){
+    //  console.log(num3[i]);
+    //  }
+    // 
+    // const city = ['Bahwalpur', 'Nankana Sahib', 'Shakupura', 'Gojra']
+    // for (i = 0; i < city.length; i++) {
+    // console.log(city[i]);
+    // }
+
+    // FOR OF LOOP Method-2
+    // const city = ['Bahwalpur', 'Nankana Sahib', 'Shakupura', 'Gojra']
+    //  for (let name of city) {
+    //  console.log(name);
+    //  }
+    // 
+    // FOE EACH LOOP Method-3
+    // const names=['Riaz','Shakuroon','Anam','Saqlian','Bushi','Khadijah','Hassan']
+    // names.forEach(function(name,index)
+    // {
+    // console.log(name,index);
+    // })
+
+    // JOIN--->To join values of array
+    // let student=['B','u','s','h','i']
+    // console.log(student.join('_')
+
+    // SPLIT--->To separate values of array
+    // student=student.join('_');
+    // console.log(student.split('_'));
+    // 
+    //FILTER METHOD--> Find value from whole array
+    // let city=[
+    // {name:'karachi', papulation:22005},
+    // {name:'Shahkot', papulation:78348},
+    // {name:'Lahore', papulation:39876},
+    // {name:'Gojra', papulation:56372}
+    // ];
+    // console.log(city.filter(cities=> {return cities.papulation>30000}))
+
+    // FIND METHOD--->Find only one value from array
+    // console.log(city.find(cities=>  cities.papulation>30000))
+
+    //MAP METHOD---> If we apply any operation on values after applying theses operations it return array
+    // console.log(city.map(cities=>  cities.papulation*2))
+
+    // EXERCISE
+    let Students = [
+      { name: 'Bushi', Age: 19, Height: 5.3 },
+      { name: 'Inshi', Age: 20, Height: 5.1 },
+      { name: 'Husnain', Age: 21, Height: 5.5 },
+      { name: 'Khadijah', Age: 17, Height: 5 }
+    ]
+
+    // console.log(Students.map(student=>student.Age>19));
+
+    // Get  Height of all characters
+    // console.log(Students.map(student=>student.Age));
+
+    //Get total height of all characters
+    // console.log(Students.reduce((prevHeight,student)=>{
+    // return prevHeight +Number(student.Height);
+    // },0));
+    // 
+    // GET character height greater then 5
+    // console.log(Students.filter(student => student.Height > 5))
+
+    //SORT METHOD
+    // console.log(Students.sort((student1, student2) => {
+      // if (student1.name < student2.name) {
+        // return -1;
+      // }
+      // if (student1.name > student2.name) {
+        // return -1;
+      // }
+      // return0;
+    // }))
+
+    // EVERY
+    // console.log(Students.every(student => student.Height > 5));
+
+    //SOME
+    console.log(Students.some(student => student.Height ))
+  </script>
+</body>
+
+</html>

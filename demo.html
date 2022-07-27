@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Demo JS</title>
+  <style>
+    button{
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid rgba(255,232,28);
+  background:rgba(255,232,28);
+  color: rgba(0,0,200,0.6);
+  box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+  border-radius: 10px;
+  padding: 13px 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <h1>Demo JS</h1>
+  <button>Roll No.6503</button>
+  <script >
+    let nb=document.querySelector('button');
+nb.addEventListener('click',inputMsg);
+function inputMsg(){
+  let name=prompt("Enter Student Name");
+  nb.textContent='Roll no.6503:' + name;
+}
+ 
+ 
+                                                                                                                                                                                                                                                                                                                                                                          
+  </script>
+</body>
+</html>

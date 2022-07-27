@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+</head>
+
+<body>
+  <h1>Object</h1>
+  <script>
+
+    // let girl = {
+    // name: 'Bushi',
+    // Age: 19
+    // }
+    //Dot Notation--->To access property
+    // console.log(girl.name);
+    //Bracket Notation
+    // console.log(girl['Age']);
+    // let lepop = 'Age';
+    // console.log(girl[lepop]);
+
+    // const course = {
+    // lacture: 10,
+    // section: 2,
+    // title: 'JavaScript',
+    // notes: {
+    // introduction: 'Welcome to JavaScript course'
+    // },
+    // enroll() {
+    // console.log('You are successfully enrolled');
+    // }
+    // }
+    // course.enroll();
+    // console.log(course.title);
+
+    // Factory Function
+    // function createCourse() {
+    // return {
+    // title: 'JvaScript',
+    // enroll() {
+    // console.log('You are successfully enrolled');
+    // }
+    // }
+    // }
+    // const course1 = createCourse('JavaScript');
+    // console.log(course1);
+    // console.log(course1.constructor);
+
+    //Constructor Function---> Always use Pascal Case
+    // function Course(title){
+    // this.title='Javascript',
+    // this.enroll=function(){
+    // console.log('You are successfully enrolled');
+    // }
+    // }
+    // const course = new Course('JavaScript');
+    // console.log(course.title);
+    // delete course.title;
+    // console.log(course);
+    // course.newEnrollment=function(){
+    // console.log('20 new users are enrolled');
+    // }
+    // console.log(course.constructor);
+
+
+    //1-PRIMITIVE DATATYPES
+    //let num = 8;
+    //pass by value
+    // let num2 = num;
+    // num = 13;
+    // console.log(num);
+    // console.log(num2);
+
+    //2-REFERENCE DATATYPES
+    // let obj={number:20};
+    //pass by reference
+    // let obj2=obj;
+    // obj.number=30;
+    // console.log(obj);
+    // console.log(obj2);
+    // const Data = {
+    // title: 'DataStructure',
+    // enroll() {
+    // // console.log('You are successfully enrolled');
+    // }
+    // }
+    // const datastructure = { ...Data };
+    // const Data_4 = Object.assign({}, Data);
+    // Data_4.title = 'Database';
+
+
+    // EXERCISE USING OBJECTS
+    //  const FaceWash={
+    // itemName:'Ponds',
+    // price:600,
+    // discount:10,
+    // itemCode:'P-6539'
+    //  }
+    //  const facewash=  {...FaceWash};
+    //  console.log(facewash);
+
+    //1-BY CONTRUCTOR FUNCTION
+    // function FaceWash(itemName, price, discount, itemCode) {
+    // this.itemName = 'Ponds',
+    // this.price = 600,
+    // this.discount = 10,
+    // this.itemCode = 'P-6539',
+    // this.discountValue = function () {
+    // return price * discount / 100;
+    // }
+    // }
+    // const facewash = new FaceWash('Ponds', 600, 10, 'P-6539');
+    // console.log(facewash);
+    // console.log(facewash.price);
+
+    //2-BY FACTORY FUNCTION
+    // function FaceWash() {
+    // return {
+    // itemName: 'Ponds',
+    // price: 1250,
+    // discount: 10,
+    // itemCode: 'P-6539',
+    // discountValue(){
+    // return price* discount/100;
+    // }
+    // }
+    // }
+    // const facewash = FaceWash();
+    // console.log(facewash);
+    // console.log(facewash.price);
+
+    // EXERCISE
+
+   //By literal function
+    // let square = {
+      // side: 10,
+      // get area() {
+        // return this.side * this.side;
+      // }
+    // }
+    // console.log(square.area);
+
+
+    let area=[ 'B' ,'u','s']
+    console.log(area.join(','))
+  </script>
+</body>
+
+</html>

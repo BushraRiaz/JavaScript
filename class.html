@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class</title>
+</head>
+
+<body>
+  <h1>Class</h1>
+  <script>
+    // class Facewash {
+    // constructor( ) {
+    // this.itemName = 'ponds',
+    // this.price = 600,
+    // this.discount = 10,
+    // this.itemCode = 'P-6539'
+    // this.discountValue = function () {
+    // return price * discount / 100;
+    // }
+    // }
+    // }
+    // let facewash = new Facewash( );
+    // const Product = class Facewash {
+    // // constructor(itemName, itemCode, price, discount) {
+    // this.itemName = 'himaliya',
+    // this.price = 200,
+    // this.discount = 5,
+    // this.itemCode = 'H-345'
+    // }
+    // get getPriceValue() {
+    // return this.price;
+    // }
+    // set setPriceValue(value) {
+    // this.price = value;
+    // }
+    // discountValue() {
+    // return this.price * this.discount / 100;
+    // }
+    // }
+    // const Ponds = new Product();
+    class Facewash {
+      constructor(itemName) {
+        console.log('Passed by  City'+ itemName);
+        this.itemName = itemName;
+      }
+      getItemName(){
+        return this.itemName +' is a Facewash';
+      }
+    }
+    // let facewash = new Facewash('himalaya');
+
+    class City extends Facewash {
+   constructor(itemName) {
+     super(itemName)
+   }
+   getvalue(){
+     return this.itemName +' is a City';
+   }
+ }
+ let pakistan =new City('Faisalabad');
+ 
+  </script>
+</body>
+
+</html>

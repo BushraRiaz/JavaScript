@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoisting</title>
+</head>
+
+<body>
+  <h1>Hoisting</h1>
+  <script>
+    // sayHello();
+    // console.log(i);
+    // function sayHello() {
+      // console.log('hello');
+    // }
+    // var i = 10;
+    // sayHello();
+    // console.log(i);
+    //TEPORARY DEAD ZONE--->We don't Put access value of "let" and "const" until we initilized it
+
+    let name = 'Riaz';
+    let y=6;
+    function sayHello() {
+      let name = 'Bushi'
+      let x=10;
+      console.log(name);
+      console.log(x);
+    }
+    sayHello();
+    console.log(name);
+    console.log(y);
+
+    //CONST--->Read only key word kbi b read nai kr skte jb initilized kry gein tb declare kry gein i.e like "const bar" ye error show kry ga
+  </script>
+
+</body>
+
+</html>
