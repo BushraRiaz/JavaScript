@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CallBack Function</title>
+</head>
+<body>
+  <h1>CallBack Function</h1>
+  <script>
+    // In callback Function we pass one function as a paramter(argument) in an other function
+    function sayHy(){
+      console.log('Hy');
+    }
+    function sayBye(){
+  console.log('Bye');
+}
+
+    function add(num1,num2,callback){
+      console.log( num1+num2);
+      callback();
+    }
+    add(20,30,sayHy);
+    add(10,10,sayBye);
+    
+    //we can also call anonymous function
+    add(10,10,function(){
+      console.log('Happy');
+    });
+
+
+
+
+
+  </script>
+</body>
+</html>

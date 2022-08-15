@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class & Inheritance</title>
+</head>
+<body>
+  <h1>Public & Private</h1>
+  <script>
+    // class emp{
+      // constructor(n){
+        // this.name=n;
+      // }
+      // getName(){
+        // console.lo(this.name);
+      // }
+    // }
+    // let Emp = new emp("Bushra");
+    // console.log(Emp.getName);
+
+    // For making any property private we put # before that property like(this.#name) and also define it outside the constructor like(#name="";)
+    // private property do not call dircetly out side the class first we call in method of that class then call method to access this property
+    //We van also make a method private,it also call by the same mathod which we fellow in private property 
+//     class emp{
+//      #name=""; 
+//   constructor(n){
+//     this.#name=n;
+//   }
+//   #getName(){
+//     console.log(this.#name);
+//   }
+//   pubfun(){
+//     this.#getName()
+//   }
+// }
+// let Emp = new emp("Bushra");
+// console.log(Emp.pubfun());
+
+
+//MAXIN
+// in class we only extend one class but in maxin we add multiple things 
+ let funMethod={
+  sayHi(){
+    console.log("Hi");
+  },
+  sayBye(){
+    console.log("Bye");
+  }
+ };
+ class user{
+  constructor(){
+    this.name="Iqbal";
+  }
+ }
+   // Object.assign(user.prototype,funMethod)
+//  let usr1 = new user();
+//  console.log(usr1);
+
+ class admin extends user{
+
+ }
+ Object.assign(admin.prototype,funMethod)
+ let admin1= new admin();
+ console.log(admin1);
+
+    // class manager extends emp{
+      // constructor(d){
+        // this.department=d;
+      // }
+      // info(){
+        // console.log("hi");
+      // }
+    // }
+    // let mng1= new manager("we development");
+    // console.log(mng1.department);
+  </script>
+</body>
+</html>
